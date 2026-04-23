@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main {
     static int N, M;
-    static int[] out;       // 정답 저장용 숫자를 담을 배열
+    static int[] out;       // 숫자를 담을 배열 (정답 저장용)
     static boolean[] visited; // 숫자를 이미 사용했는지 체크하는 배열
     static StringBuilder sb = new StringBuilder(); // 한 번에 출력하려고 쓰는 도구
 
@@ -15,7 +15,7 @@ public class Main {
         N = sc.nextInt(); 
         M = sc.nextInt();
         
-        out = new int[M];             // M개 뽑으니 크기는 M
+        out = new int[M];          // M개 뽑으니 크기는 M
         visited = new boolean[N + 1]; // 1부터 N까지라 크기는 N+1
         
         // 탐색 시작 (현재 0개를 뽑은 상태)
